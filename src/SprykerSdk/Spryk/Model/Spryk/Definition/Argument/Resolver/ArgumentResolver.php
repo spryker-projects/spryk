@@ -330,7 +330,7 @@ class ArgumentResolver implements ArgumentResolverInterface
             return $argumentCollection;
         }
 
-        if (!in_array($argumentCollection->getArgument(SprykConfig::NAME_ARGUMENT_ORGANIZATION)->getValue(), ['Spryker', 'SprykerShop', 'Pyz'])) {
+        if (!in_array($argumentCollection->getArgument(SprykConfig::NAME_ARGUMENT_ORGANIZATION)->getValue(), ['Spryker', 'SprykerShop', 'SprykerDemo', 'Pyz'])) {
             $argumentCollection->getArgument('sprykerVendorPath')->setValue('');
             $argumentCollection->getArgument('moduleSrcDirectory')->setValue('');
             $argumentCollection->getArgument('moduleRoot')->setValue('{{ module | dasherize }}');
